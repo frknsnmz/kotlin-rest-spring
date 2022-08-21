@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "a7aa7bfe-3d08-40e8-82bf-d5f955346859",
+		"name": "Kotlin Spring Rest Exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Transfer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/transfer/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"targetAccount\": \"Example01\",\r\n    \"value\": 163.23,\r\n    \"description\": \"description valid in here\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transfer/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
